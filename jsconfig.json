@@ -1,0 +1,7 @@
+{
+  "complierOptions": {
+    "baseUrl": "src"
+  },
+  "include": ["src"],
+  "exclude": ["node_module", "**/node_module/*"]
+}
