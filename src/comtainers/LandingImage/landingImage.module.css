@@ -1,0 +1,5 @@
+.container {
+  clip-path: polygon(0 0, 50% 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
+  width: 100vw;
+  height: 100vh;
+}
