@@ -1,5 +1,12 @@
+import { LandingImage } from "./comtainers";
+
 function App() {
-  return <>Hello</>;
+  console.log("app");
+  return (
+    <>
+      <LandingImage />
+    </>
+  );
 }
 
 export default App;
