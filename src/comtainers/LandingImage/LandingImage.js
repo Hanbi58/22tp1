@@ -9,6 +9,10 @@ function LandingImage() {
       <div className={classes.mountainLeft}></div>
       <div className={classes.mountainRight}></div>
       <div className={classes.cloudBottom}></div>
+
+      <p className={classes.titleFirst}>TOP PEAKS</p>
+
+      <p className={classes.explore}>Explore Roof of the world.</p>
     </div>
   );
 }
