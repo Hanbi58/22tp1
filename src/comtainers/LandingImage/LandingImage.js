@@ -1,14 +1,14 @@
-import { backgroundImg, sky } from "../../assets/landingImages";
+import classes from "./landingImage.module.css";
 
 function LandingImage() {
   return (
-    <div>
-      <div>
-        <img src={backgroundImg} alt="" />
-      </div>
-      <div>
-        <img src={sky} alt="" />
-      </div>
+    <div className={classes.container}>
+      <div className={classes.mountainMain}></div>
+      <div className={classes.cloudTop}></div>
+      <div className={classes.cloudMid}></div>
+      <div className={classes.mountainLeft}></div>
+      <div className={classes.mountainRight}></div>
+      <div className={classes.cloudBottom}></div>
     </div>
   );
 }
