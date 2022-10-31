@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Chonburi&display=swap");
 .navbar {
   position: absolute;
   display: flex;
@@ -16,14 +17,20 @@
 }
 
 .bigLinks {
-  width: 200px;
+  width: 250px;
   display: flex;
   justify-content: space-between;
 }
 
 .bigLinks a {
+  font-family: "Chonburi", cursive;
   text-decoration: none;
   color: white;
-  font-weight: 500;
   font-size: 1rem;
+  transition: all 0.3s ease-out;
+}
+
+.bigLinks a:hover {
+  color: #ff004d;
+  transform: translateY(-2px);
 }
