@@ -1,5 +1,6 @@
 import classes from "./landingImage.module.css";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 function LandingImage() {
   const [slowDown, setSlowDown] = useState(false);
@@ -18,13 +19,19 @@ function LandingImage() {
   const cloudBottomCls = slowDown
     ? `${classes.cloudBottom} ${classes.slowdown}`
     : `${classes.cloudBottom}`;
+  const headerRef = useRef(null);
+  let { scrollYProgress } = useScroll({
+    target: headerRef,
+    offset: ["start start", "end start"],
+  });
+  let y = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
   return (
     <div className={classes.container}>
-      <div className={classes.mountainMain}></div>
+      <div className={classes.mountainMain} ref={headerRef}></div>
       <div className={cloudTopCls}></div>
       <div className={cloudMidCls}></div>
-      <div className={classes.mountainLeft}></div>
-      <div className={classes.mountainRight}></div>
+      <motion.div style={{ y }} className={classes.mountainLeft}></motion.div>
+      <motion.div style={{ y }} className={classes.mountainRight}></motion.div>
       <div className={cloudBottomCls}></div>
 
       <p
@@ -41,27 +48,3 @@ function LandingImage() {
 }
 
 export default LandingImage;
-
-var findPeakElement = function (nums) {
-  if (nums.length === 1) {
-    return 0;
-  }
-  if (nums[0] > nums[1]) {
-    return 0;
-  }
-  if (nums[nums.length - 1] > nums[nums.length - 2]) {
-    return nums.length - 1;
-  }
-  let left = 1;
-  let right = nums.length - 2;
-  while (left <= right) {
-    let mid = Math.floor((left + right) / 2);
-    if (nums[mid - 1] < nums[mid] && nums[mid] > nums[mid + 1]) {
-      return mid;
-    } else if (nums[mid + 1] > nums[mid]) {
-      left = mid + 1;
-    } else {
-      right = mid - 1;
-    }
-  }
-};
