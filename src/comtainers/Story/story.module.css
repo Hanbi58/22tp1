@@ -17,19 +17,84 @@
   margin: auto;
   width: 90%;
   display: flex;
+  justify-content: space-between;
   max-width: 1400px;
-  height: 700px;
+  height: 650px;
+}
+
+.textBox {
+  position: relative;
+  width: 700px;
+}
+
+.textBox h1 {
+  font-size: 2.75rem;
+  text-align: end;
+}
+
+.textBox h2 {
+  line-height: 2rem;
+  text-align: end;
+  color: var(--color-text);
+  font-weight: 100;
+}
+
+.textBox p {
+  font-size: 0.95rem;
+  line-height: 1.4rem;
+  position: absolute;
+  bottom: 0;
+  text-align: justify;
+  color: var(--color-text);
+}
+
+.imageBox {
+  width: 500px;
+  position: relative;
+}
+
+.georgeBg {
+  position: relative;
+  width: 100%;
+  background-color: var(--color-blog);
+
+  z-index: -1;
+  padding: 2rem 1rem 1rem 2rem;
+}
+
+.georgeBg p {
+  text-align: justify;
+}
+.georgeBg p:nth-of-type(2) {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: end;
+  margin-top: 1rem;
 }
 
 .george {
-  width: 500px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
-
 .vrBox {
   height: 100%;
   top: 0;
-  left: 55%;
-  width: 3px;
-  margin: 0 100px;
+  width: 1px;
   background-color: white;
+}
+
+.georgeName {
+  position: absolute;
+  right: 0;
+  top: 220px;
+  font-weight: 700;
+  font-size: 1.45rem;
+  z-index: 1;
+  background: var(--gradient-text);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.georgeName span {
+  font-size: 4rem;
 }
