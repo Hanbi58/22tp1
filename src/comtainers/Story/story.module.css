@@ -1,0 +1,35 @@
+.storyContainer {
+  position: relative;
+  width: 100vw;
+  color: white;
+  margin: 20rem 0;
+}
+
+.storyBg {
+  position: absolute;
+  z-index: -5;
+  width: 100vw;
+  opacity: 0.03;
+  top: 0;
+}
+
+.content {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  max-width: 1400px;
+  height: 700px;
+}
+
+.george {
+  width: 500px;
+}
+
+.vrBox {
+  height: 100%;
+  top: 0;
+  left: 55%;
+  width: 3px;
+  margin: 0 100px;
+  background-color: white;
+}
