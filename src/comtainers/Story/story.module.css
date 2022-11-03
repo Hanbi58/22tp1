@@ -2,15 +2,20 @@
   position: relative;
   width: 100vw;
   color: white;
-  margin: 20rem 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
 }
 
 .storyBg {
   position: absolute;
   z-index: -5;
-  width: 100vw;
+  width: 100%;
   opacity: 0.03;
-  top: 0;
+  top: 10rem;
 }
 
 .content {

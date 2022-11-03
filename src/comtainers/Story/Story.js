@@ -3,7 +3,7 @@ import { default as george } from "../../assets/story/george.jpg";
 import { default as storyBg } from "../../assets/story/storyBg.png";
 function Story() {
   return (
-    <div className={classes.storyContainer}>
+    <div className={classes.storyContainer} id="story">
       <img src={storyBg} alt="" className={classes.storyBg} />
       <div className={classes.content}>
         <div className={classes.textBox}>
