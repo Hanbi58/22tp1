@@ -1,4 +1,4 @@
-function Widget(props) {
+function Carousal(props) {
   return (
     <div class="swiper-slide">
       <div class="picture">
@@ -13,4 +13,4 @@ function Widget(props) {
   );
 }
 
-export default Widget;
+export default Carousal;
