@@ -1,10 +1,14 @@
+import oneB from "./01b.jpg";
+import twoB from "./02b.jpg";
+import threeB from "./03b.jpg";
+
 export const listContent = [
   {
     id: "01",
     heightMeters: 8848,
     heightFeet: 29031,
     mountainName: "Everest",
-    imageUrl: "",
+    imageUrl: oneB,
     shortDescription:
       "Earth's highest mountain above sea level, located in the Mahalangur Himal sub-range of the Himalayas. The China-Nepal border runs across its summit point.",
     longDescription:
@@ -16,7 +20,7 @@ export const listContent = [
     heightMeters: 8610,
     heightFeet: 28250,
     mountainName: "K2",
-    imageUrl: "",
+    imageUrl: twoB,
     shortDescription:
       "Also named as Qogir. It lies in the Karakoram range, partially in the Gilgit-Baltistan region of Pakistan-administered Kashmir and partially in a China-administered territory of the Kashmir region",
     longDescription:
@@ -28,7 +32,7 @@ export const listContent = [
     heightMeters: 8586,
     heightFeet: 28169,
     mountainName: "Kangchenjunga",
-    imageUrl: "",
+    imageUrl: threeB,
     shortDescription:
       "It lies in a section of the Himalayas, in the border region between Nepal and Sikkim state of India",
     longDescription:
