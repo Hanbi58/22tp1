@@ -1,5 +1,5 @@
-import oneB from "./01b.jpg";
-import twoB from "./02b.jpg";
+import oneB from "./01b6.jpg";
+import twoB from "./02b7.jpg";
 import threeB from "./03b.jpg";
 
 export const listContent = [

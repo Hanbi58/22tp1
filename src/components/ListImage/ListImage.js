@@ -6,7 +6,7 @@ function ListImage({ listContent }) {
       <div
         className={classes.bg}
         style={{
-          background: ` no-repeat center/cover url(${listContent.imageUrl})`,
+          background: ` no-repeat  center/cover url(${listContent.imageUrl})`,
         }}
       >
         {listContent.imageUrl}

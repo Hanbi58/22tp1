@@ -13,6 +13,7 @@ function List() {
   return (
     <main className={classes.listContainer} id="rank">
       <Swiper
+        className={classes.imageSwiper}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
       >
