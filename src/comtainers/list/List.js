@@ -42,12 +42,21 @@ function List() {
           spaceBetween={-100}
           coverflowEffect={{
             rotate: 20,
-            stretch: 100,
+            stretch: 0,
             depth: 350,
-            modifier: 1,
+            modifier: 1.5,
             slideShadows: true,
           }}
           loop={true}
+          breakpoints={{
+            // allows for different parameters to be set for responsiveness
+
+            300: {
+              // for window width >= 300px
+              // spaceBetween: 0,
+              // slidesPerView: 1,
+            },
+          }}
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
         >
