@@ -8,6 +8,7 @@ function Carousal({ listContentItem }) {
         background: ` no-repeat top center/cover url(${listContentItem.smallImageUrl})`,
       }}
     >
+      
       {listContentItem.smallImageUrl}
     </div>
   );
