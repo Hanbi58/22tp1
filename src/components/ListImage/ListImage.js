@@ -1,15 +1,15 @@
 import classes from "./listImage.module.css";
 
-function ListImage({ listContent }) {
+function ListImage({ listContentItem }) {
   return (
     <>
       <div
         className={classes.bg}
         style={{
-          background: ` no-repeat  center/cover url(${listContent.imageUrl})`,
+          background: ` no-repeat  center/cover url(${listContentItem.imageUrl})`,
         }}
       >
-        {listContent.imageUrl}
+        {listContentItem.imageUrl}
       </div>
     </>
   );

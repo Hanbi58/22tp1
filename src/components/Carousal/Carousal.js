@@ -1,14 +1,11 @@
-function Carousal(props) {
+function Carousal({ listContentItem }) {
   return (
-    <div class="swiper-slide">
-      <div class="picture">
-        <img src={props.imgurl} alt="" />
-      </div>
-      ;
-      <div class="detail">
-        <h3>Marie Edwards</h3>
-        <span>Web Designer</span>
-      </div>
+    <div
+      style={{
+        background: ` no-repeat  center/cover url(${listContentItem.smallImageUrl})`,
+      }}
+    >
+      {listContentItem.smallImageUrl}
     </div>
   );
 }
