@@ -3,7 +3,7 @@ import twoB from "./02b7.jpg";
 import threeB from "./03b.jpg";
 import oneS from "./01s.jpg";
 import twoS from "./02s.jpg";
-import threeS from "./0s.jpg";
+import threeS from "./03s2.jpg";
 
 export const listContent = [
   {
