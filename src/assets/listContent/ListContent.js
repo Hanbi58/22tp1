@@ -1,9 +1,10 @@
 import oneB from "./01b6.jpg";
 import twoB from "./02b7.jpg";
-import threeB from "./03b.jpg";
+import threeB from "./03b2.jpg";
+
 import oneS from "./01s.jpg";
 import twoS from "./02s.jpg";
-import threeS from "./03s2.jpg";
+import threeS from "./03s3.jpg";
 
 export const listContent = [
   {
@@ -11,6 +12,8 @@ export const listContent = [
     heightMeters: 8848,
     heightFeet: 29031,
     mountainName: "Everest",
+    range: "Himalayas",
+    region: "Nepal/Tibet",
     imageUrl: oneB,
     shortDescription:
       "Earth's highest mountain above sea level, located in the Mahalangur Himal sub-range of the Himalayas. The China-Nepal border runs across its summit point.",
@@ -23,6 +26,8 @@ export const listContent = [
     heightMeters: 8610,
     heightFeet: 28250,
     mountainName: "K2",
+    range: "Karakoram",
+    region: "Pakistan/China",
     imageUrl: twoB,
     shortDescription:
       "Also named as Qogir. It lies in the Karakoram range, partially in the Gilgit-Baltistan region of Pakistan-administered Kashmir and partially in a China-administered territory of the Kashmir region",
@@ -35,11 +40,41 @@ export const listContent = [
     heightMeters: 8586,
     heightFeet: 28169,
     mountainName: "Kangchenjunga",
+    range: "Himalayas",
+    region: "Nepal/India",
     imageUrl: threeB,
     shortDescription:
       "It lies in a section of the Himalayas, in the border region between Nepal and Sikkim state of India",
     longDescription:
       "This makes Kangchenjunga the highest peak in India.Until 1852, It was assumed to be the highest mountain in the world, but calculations and measurements by the Great Trigonometrical Survey of India in 1849 showed that Mount Everest, known as Peak XV at the time, is actually higher. After allowing for further verification of all calculations, it was officially announced in 1856 that Kangchenjunga was the third highest mountain.",
+    smallImageUrl: threeS,
+  },
+  {
+    id: "04",
+    heightMeters: 8516,
+    heightFeet: 27940,
+    mountainName: "Lhotse",
+    range: "Himalayas",
+    region: "Nepal/Tibet",
+    imageUrl: threeB,
+    shortDescription:
+      "Lhotse is separated from Everest by just under 2 miles, connected to Everest via the South Col.",
+    longDescription:
+      "Lhotse is a little like the neglected younger sibling of Mount Everest. Everest gets all the attention while Lhotse, though often considered more visually attractive, is significantly less busy. While the main summit of Lhotse was first climbed in 1956, the Lhotse Middle actually remained the highest unclimbed, named point on Earth for decades. It was eventually first scaled in 2011 by a Russian expedition.",
+    smallImageUrl: threeS,
+  },
+  {
+    id: "05",
+    heightMeters: 8485,
+    heightFeet: 27838,
+    mountainName: "	Makalu",
+    range: "Himalayas",
+    region: "Nepal/Tibet",
+    imageUrl: threeB,
+    shortDescription:
+      "Makalu is the third of the four 8000m-high mountains in the Everest Massif in Nepal. It is located 12 miles southeast of Mount Everest",
+    longDescription:
+      "It was first summited by a French expedition led by Jean Franco in 1955. Their ascent was most notable for the fact that a full ten members of the expedition team summited the mountain on the trip. In those days, it was normally only one or two climbers from each team who reached the top of the mountain on an expedition, so this was a huge deal at the time, and generally, it’s just quite nice, isn’t it? The first two summited on 15 May 1955, then four more went up the next day, then four more went up the day after that. Just very wholesome mountain climbing, really.",
     smallImageUrl: threeS,
   },
 ];
