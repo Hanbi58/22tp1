@@ -30,10 +30,11 @@ function List() {
   const [infoSwiper, setInfoSwiper] = useState(null);
 
   const pagination = {
-    dynamicBullets: true,
+    // dynamicBullets: true,
     clickable: true,
     renderBullet: function (index, className) {
-      return '<div class="' + className + '">' + (index + 1) + "</div>";
+      let rankNum = index + 1 < 10 ? "0" + (index + 1) : index + 1;
+      return '<div class="' + className + '">' + rankNum + "</div>";
     },
   };
 
