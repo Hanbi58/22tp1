@@ -6,7 +6,6 @@
 
 .imageSwiper {
   position: absolute;
-
   top: 0;
   left: 0;
   width: 100%;
@@ -17,9 +16,27 @@
   bottom: 2rem;
   right: 15rem;
   width: 550px;
-  height: 550px;
+  height: 600px;
 }
 .carouselSwiper {
   width: 650px;
   height: 100%;
+}
+
+.infoSwiper {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  color: white;
+  z-index: 5;
+  width: 800px;
+  height: 250px;
+  top: 5rem;
+  left: 5rem;
+}
+
+.swiper-pagination-bullet {
+  width: 25px;
+  height: 5px;
+  border-radius: 5px;
 }

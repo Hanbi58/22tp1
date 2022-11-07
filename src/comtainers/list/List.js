@@ -1,34 +1,45 @@
-import { Swiper, SwiperSlide, useSwiper,useSwiperSlide  } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/effect-coverflow";
-import 'swiper/css/pagination';
+import "swiper/css/pagination";
+import "./swiperStyle.css";
 import classes from "./list.module.css";
 import { listContent } from "../../assets/listContent/ListContent";
-import { ListImage, Carousal } from "../../components";
-import { EffectFade, EffectCoverflow, Controller, Pagination,Thumbs  } from "swiper";
-import { useState, useRef } from "react";
+import { ListImage, Carousal, ListInfo } from "../../components";
+import { EffectFade, EffectCoverflow, Pagination, Thumbs } from "swiper";
+import { useState } from "react";
 
 const imageSwipers = listContent.map((listContentItem) => (
-
   <SwiperSlide key={listContentItem.id}>
     <ListImage listContentItem={listContentItem} />
   </SwiperSlide>
 ));
+const infoSwipers = listContent.map((listContentItem) => (
+  <SwiperSlide key={listContentItem.id}>
+    <ListInfo listContentItem={listContentItem} />
+  </SwiperSlide>
+));
 const carousalSwipers = listContent.map((listContentItem) => (
-  
-  <SwiperSlide key={listContentItem.id} >
-    
+  <SwiperSlide key={listContentItem.id}>
     <Carousal listContentItem={listContentItem} />
   </SwiperSlide>
 ));
 function List() {
-  const [controlledSwiper, setControlledSwiper] = useState(null);
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [infoSwiper, setInfoSwiper] = useState(null);
+
+  const pagination = {
+    dynamicBullets: true,
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<div class="' + className + '">' + (index + 1) + "</div>";
+    },
+  };
+
   return (
     <main className={classes.listContainer} id="rank">
       <Swiper
-        
         className={classes.imageSwiper}
         modules={[EffectFade, Thumbs]}
         effect={"fade"}
@@ -39,11 +50,23 @@ function List() {
       >
         {imageSwipers}
       </Swiper>
+      <Swiper
+        className={classes.infoSwiper}
+        modules={[Thumbs]}
+        simulateTouch={false}
+        loop={true}
+        thumbs={{ swiper: thumbsSwiper }}
+        onSwiper={setInfoSwiper}
+        watchSlidesProgress={true}
+        direction={"vertical"}
+      >
+        {infoSwipers}
+      </Swiper>
       <div className={classes.carouselContainer}>
         <Swiper
-           pagination={{ clickable: true }}
           className={classes.carouselSwiper}
-          modules={[EffectCoverflow,Pagination,Thumbs]}
+          modules={[EffectCoverflow, Thumbs, Pagination]}
+          pagination={pagination}
           effect={"coverflow"}
           grabCursor={true}
           watchSlidesProgress={true}
@@ -62,8 +85,7 @@ function List() {
             // allows for different parameters to be set for responsiveness
             300: {},
           }}
-          thumbs={{ swiper: thumbsSwiper }}
-          
+          thumbs={{ swiper: infoSwiper }}
         >
           {carousalSwipers}
         </Swiper>

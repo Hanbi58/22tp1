@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap");
+.info {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.name {
+  font-family: "Red Rose", cursive;
+  font-size: 4rem;
+}
+
+/* .textContainer {
+  position: relative;
+  left: 1rem;
+} */
+
+.text {
+  position: relative;
+  display: flex;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+.text span {
+  margin-left: -0.4rem;
+  font-size: 0.8rem;
+}
+
+.height {
+  font-size: 1.1rem;
+}
+
+.info p {
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  text-align: justify;
+}

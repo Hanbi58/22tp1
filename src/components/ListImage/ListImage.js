@@ -8,9 +8,7 @@ function ListImage({ listContentItem }) {
         style={{
           background: ` no-repeat  center/cover url(${listContentItem.imageUrl})`,
         }}
-      >
-        {listContentItem.imageUrl}
-      </div>
+      ></div>
     </>
   );
 }
