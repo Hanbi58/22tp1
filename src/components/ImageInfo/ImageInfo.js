@@ -1,11 +1,17 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import classes from "./imageInfo.module.css";
 
 function ImageInfo({ listContentItem }) {
   const [isOpen, setIsOpen] = useState(false);
-
+  useEffect(() => {
+    let timeout;
+    if (isOpen) {
+      timeout = setTimeout(() => setIsOpen(false), 15000);
+    }
+    return () => clearTimeout(timeout);
+  }, [isOpen]);
   const variants = {
     open: { borderRadius: 0 },
     closed: {
