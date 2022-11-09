@@ -1,17 +1,9 @@
 import React from "react";
-import { useState, useEffect } from "react";
+// import { useState } from "react";
 import { motion } from "framer-motion";
 import classes from "./imageInfo.module.css";
 
-function ImageInfo({ listContentItem }) {
-  const [isOpen, setIsOpen] = useState(false);
-  useEffect(() => {
-    let timeout;
-    if (isOpen) {
-      timeout = setTimeout(() => setIsOpen(false), 15000);
-    }
-    return () => clearTimeout(timeout);
-  }, [isOpen]);
+function ImageInfo({ listContentItem, isOpen, openHandler }) {
   const variants = {
     open: { borderRadius: 0 },
     closed: {
@@ -28,7 +20,7 @@ function ImageInfo({ listContentItem }) {
         variants={variants}
         data-isopen={isOpen}
         className={classes.parent}
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={openHandler}
       >
         {/* <motion.div layout className={classes.child}></motion.div> */}
         {isOpen ? <div>{listContentItem.longDescription}</div> : ""}
@@ -40,3 +32,4 @@ function ImageInfo({ listContentItem }) {
 export default ImageInfo;
 
 // {listContentItem.longDescription}
+// { listContentItem, isOpen, openHandler }

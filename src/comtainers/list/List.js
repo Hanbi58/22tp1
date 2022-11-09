@@ -9,25 +9,37 @@ import { listContent } from "../../assets/listContent/ListContent";
 import { ListImage, Carousal, ListInfo } from "../../components";
 import { EffectFade, EffectCoverflow, Pagination, Thumbs } from "swiper";
 import { useState } from "react";
-const imageSwipers = listContent.map((listContentItem) => (
-  <SwiperSlide key={listContentItem.id}>
-    <ListImage listContentItem={listContentItem} />
-  </SwiperSlide>
-));
-const infoSwipers = listContent.map((listContentItem) => (
-  <SwiperSlide key={listContentItem.id}>
-    <ListInfo listContentItem={listContentItem} />
-  </SwiperSlide>
-));
-const carousalSwipers = listContent.map((listContentItem) => (
-  <SwiperSlide key={listContentItem.id}>
-    <Carousal listContentItem={listContentItem} />
-  </SwiperSlide>
-));
+
 function List() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const [infoSwiper, setInfoSwiper] = useState(null);
+  const [isOpen, setIsOpen] = useState(false);
+  const openHandler = () => {
+    setIsOpen((isOpen) => !isOpen);
+  };
+  const closeHandler = () => {
+    isOpen && setIsOpen(() => false);
+  };
 
+  const imageSwipers = listContent.map((listContentItem) => (
+    <SwiperSlide key={listContentItem.id}>
+      <ListImage
+        listContentItem={listContentItem}
+        isOpen={isOpen}
+        openHandler={openHandler}
+      />
+    </SwiperSlide>
+  ));
+  const infoSwipers = listContent.map((listContentItem) => (
+    <SwiperSlide key={listContentItem.id}>
+      <ListInfo listContentItem={listContentItem} />
+    </SwiperSlide>
+  ));
+  const carousalSwipers = listContent.map((listContentItem) => (
+    <SwiperSlide key={listContentItem.id}>
+      <Carousal listContentItem={listContentItem} />
+    </SwiperSlide>
+  ));
   const pagination = {
     // dynamicBullets: true,
     clickable: true,
@@ -86,6 +98,7 @@ function List() {
             300: {},
           }}
           thumbs={{ swiper: infoSwiper }}
+          onSlideChange={closeHandler}
         >
           {carousalSwipers}
         </Swiper>
