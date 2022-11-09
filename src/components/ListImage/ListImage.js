@@ -1,5 +1,5 @@
 import classes from "./listImage.module.css";
-
+import ImageInfo from "../ImageInfo/ImageInfo";
 function ListImage({ listContentItem }) {
   return (
     <>
@@ -8,7 +8,9 @@ function ListImage({ listContentItem }) {
         style={{
           background: ` no-repeat  center/cover url(${listContentItem.imageUrl})`,
         }}
-      ></div>
+      >
+        <ImageInfo listContentItem={listContentItem} />
+      </div>
     </>
   );
 }

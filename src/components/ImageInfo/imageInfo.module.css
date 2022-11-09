@@ -1,0 +1,38 @@
+/* .imageInfoContainer {
+  background-color: var(--color-bg-trans);
+  color: white;
+  position: absolute;
+  top: 20rem;
+  left: 5rem;
+  width: calc(800px * 0.8);
+  padding: 2rem;
+} */
+
+.parent {
+  background-color: var(--color-bg-trans);
+  color: white;
+  position: absolute;
+  top: 20rem;
+  left: 5rem;
+  width: 40px;
+  height: 40px;
+  padding: 2rem;
+}
+
+.parent[data-isopen="true"] {
+  background-color: var(--color-bg-trans);
+  color: white;
+  position: absolute;
+  top: 20rem;
+  left: 5rem;
+  height: auto;
+  width: calc(800px * 0.8);
+  padding: 2rem;
+}
+
+/* .child {
+  width: 40px;
+  height: 40px;
+  background: #f107a3;
+  border-radius: 50%;
+} */

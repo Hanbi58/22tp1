@@ -9,7 +9,6 @@ import { listContent } from "../../assets/listContent/ListContent";
 import { ListImage, Carousal, ListInfo } from "../../components";
 import { EffectFade, EffectCoverflow, Pagination, Thumbs } from "swiper";
 import { useState } from "react";
-
 const imageSwipers = listContent.map((listContentItem) => (
   <SwiperSlide key={listContentItem.id}>
     <ListImage listContentItem={listContentItem} />
