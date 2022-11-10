@@ -23,7 +23,26 @@ function ImageInfo({ listContentItem, isOpen, openHandler }) {
         className={classes.parent}
       >
         {/* <motion.div layout className={classes.child}></motion.div> */}
-        {isOpen ? <div>{listContentItem.longDescription}</div> : ""}
+        {isOpen ? (
+          <div className={classes.textContainer}>
+            <div className={classes.textBox}>
+              <div className={classes.title}>
+                <p>Range</p>
+                <span>Region </span>
+              </div>
+              <div className={classes.text}>
+                <p>{listContentItem.range}</p>
+
+                <span>{listContentItem.region}</span>
+              </div>
+            </div>
+            <div className={classes.description}>
+              {listContentItem.longDescription}
+            </div>
+          </div>
+        ) : (
+          ""
+        )}
       </motion.div>
       <Toggle toggle={openHandler} isOpen={isOpen} />
     </div>
