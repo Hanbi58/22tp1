@@ -2,6 +2,7 @@ import React from "react";
 // import { useState } from "react";
 import { motion } from "framer-motion";
 import classes from "./imageInfo.module.css";
+import Toggle from "./Toggle";
 
 function ImageInfo({ listContentItem, isOpen, openHandler }) {
   const variants = {
@@ -20,11 +21,11 @@ function ImageInfo({ listContentItem, isOpen, openHandler }) {
         variants={variants}
         data-isopen={isOpen}
         className={classes.parent}
-        onClick={openHandler}
       >
         {/* <motion.div layout className={classes.child}></motion.div> */}
         {isOpen ? <div>{listContentItem.longDescription}</div> : ""}
       </motion.div>
+      <Toggle toggle={openHandler} isOpen={isOpen} />
     </div>
   );
 }
