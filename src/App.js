@@ -1,4 +1,4 @@
-import { LandingImage, Story, List } from "./comtainers";
+import { LandingImage, Story, List, Bonus } from "./comtainers";
 import { NavBar } from "./components";
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
       <LandingImage />
       <Story />
       <List />
+      <Bonus />
     </>
   );
 }

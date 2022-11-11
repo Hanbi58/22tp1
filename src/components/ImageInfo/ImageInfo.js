@@ -26,15 +26,8 @@ function ImageInfo({ listContentItem, isOpen, openHandler }) {
         {isOpen ? (
           <div className={classes.textContainer}>
             <div className={classes.textBox}>
-              <div className={classes.title}>
-                <p>Range</p>
-                <span>Region </span>
-              </div>
-              <div className={classes.text}>
-                <p>{listContentItem.range}</p>
-
-                <span>{listContentItem.region}</span>
-              </div>
+              <p>{listContentItem.range}</p>
+              <span>{listContentItem.region}</span>
             </div>
             <div className={classes.description}>
               {listContentItem.longDescription}

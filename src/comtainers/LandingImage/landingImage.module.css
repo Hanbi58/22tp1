@@ -40,7 +40,7 @@
   height: 20%;
   top: 15vh;
   /* left: 10vw; */
-  animation: cloud-top 150s linear infinite;
+  animation: cloud-top 200s linear infinite;
 }
 
 @keyframes cloud-top {
@@ -80,7 +80,7 @@
   height: 40%;
   bottom: 25vh;
   /* right: -5vw; */
-  animation: cloud-mid 100s linear infinite;
+  animation: cloud-mid 160s linear infinite;
 }
 
 @keyframes cloud-mid {
