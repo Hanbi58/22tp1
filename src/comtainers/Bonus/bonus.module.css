@@ -1,0 +1,32 @@
+.bonusContainer {
+  position: relative;
+  width: 100vw;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10rem 0;
+}
+.bonusBg {
+  position: absolute;
+  z-index: -5;
+  width: 100%;
+  opacity: 0.03;
+  top: 10rem;
+}
+.content {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  height: 800px;
+}
+.vrBox {
+  height: 100%;
+  top: 0;
+  width: 1px;
+  background-color: white;
+}
