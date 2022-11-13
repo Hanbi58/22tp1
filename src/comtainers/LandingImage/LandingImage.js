@@ -28,17 +28,17 @@ function LandingImage() {
   return (
     <div className={classes.container} ref={headerRef}>
       <motion.div
-        style={{ y: useTransform(scrollYProgress, [0, 1], ["0%", "40%"]) }}
+        style={{ y: useTransform(scrollYProgress, [0, 1], ["0%", "60%"]) }}
         className={classes.sky}
       ></motion.div>
       <motion.div
-        style={{ y: useTransform(scrollYProgress, [0, 1], ["0%", "30%"]) }}
+        style={{ y: useTransform(scrollYProgress, [0, 1], ["0%", "55%"]) }}
         className={classes.mountainMain}
       ></motion.div>
       <div className={cloudTopCls}></div>
       <div className={cloudMidCls}></div>
       <motion.div
-        style={{ y: useTransform(scrollYProgress, [0, 1], ["0%", "25%"]) }}
+        style={{ y: useTransform(scrollYProgress, [0, 1], ["0%", "35%"]) }}
         className={classes.mountainLeft}
       ></motion.div>
       <motion.div

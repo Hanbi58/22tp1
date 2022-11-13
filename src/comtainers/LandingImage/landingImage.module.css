@@ -81,9 +81,9 @@
   position: absolute;
   background: no-repeat center/contain
     url("../../assets/landingImages/cloudMid.png");
-  width: 40%;
-  height: 40%;
-  bottom: 25vh;
+  width: 35%;
+  height: 35%;
+  bottom: 30vh;
   /* right: -5vw; */
   animation: cloud-mid 160s linear infinite;
 }
@@ -111,10 +111,10 @@
   position: absolute;
   background: no-repeat url("../../assets/landingImages/cloudBottom.png");
   background-position: center top;
-  background-size: cover;
-  width: 100%;
-  height: 20%;
-  bottom: 0;
+  background-size: contain;
+  width: 2000px;
+  height: 1000px;
+  bottom: -35rem;
   animation: cloud-buttom 90s linear infinite;
 }
 
