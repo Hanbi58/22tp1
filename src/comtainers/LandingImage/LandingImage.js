@@ -24,24 +24,37 @@ function LandingImage() {
     target: headerRef,
     offset: ["start start", "end start"],
   });
-  let y = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
+
   return (
-    <div className={classes.container}>
-      <div className={classes.mountainMain} ref={headerRef}></div>
+    <div className={classes.container} ref={headerRef}>
+      <motion.div
+        style={{ y: useTransform(scrollYProgress, [0, 1], ["0%", "40%"]) }}
+        className={classes.sky}
+      ></motion.div>
+      <motion.div
+        style={{ y: useTransform(scrollYProgress, [0, 1], ["0%", "30%"]) }}
+        className={classes.mountainMain}
+      ></motion.div>
       <div className={cloudTopCls}></div>
       <div className={cloudMidCls}></div>
-      <motion.div style={{ y }} className={classes.mountainLeft}></motion.div>
-      <motion.div style={{ y }} className={classes.mountainRight}></motion.div>
+      <motion.div
+        style={{ y: useTransform(scrollYProgress, [0, 1], ["0%", "25%"]) }}
+        className={classes.mountainLeft}
+      ></motion.div>
+      <motion.div
+        style={{ y: useTransform(scrollYProgress, [0, 1], ["0%", "20%"]) }}
+        className={classes.mountainRight}
+      ></motion.div>
       <div className={cloudBottomCls}></div>
 
       <p
+        // style={{ top: useTransform(scrollYProgress, [0, 1], ["0%", "90%"]) }}
         className={classes.titleFirst}
         onMouseEnter={mouseEnterHandler}
         onMouseLeave={mouseLeaveHandler}
       >
         TOP PEAKS
       </p>
-
       <p className={classes.explore}>Explore roof of the world.</p>
     </div>
   );

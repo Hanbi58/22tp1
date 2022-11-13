@@ -134,6 +134,7 @@
 }
 
 .height {
+  color: var(--color-text);
   font-size: 0.8rem;
 }
 
