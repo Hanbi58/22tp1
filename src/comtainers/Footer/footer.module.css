@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap");
+.footer {
+  width: 1400px;
+  margin: auto;
+  height: 320px;
+}
+
+.quote {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  margin: 10rem 0 8rem;
+  font-family: "Red Rose", cursive;
+}
+
+.quote p:nth-of-type(1) {
+  color: var(--color-text);
+}
+
+.logoContainer {
+  width: 300px;
+  height: 100px;
+  margin: auto;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.truthlogo {
+  width: 50px;
+  height: 50px;
+  background-image: url("../../assets/navbar/truthNoBg.svg");
+  background-size: contain;
+  filter: saturate(60%) brightness(100%);
+}
+
+.lastWords p:nth-of-type(1) {
+  font-size: 1.3rem;
+}
+.lastWords p:nth-of-type(2) {
+  font-size: 0.78rem;
+  color: var(--color-text);
+}
