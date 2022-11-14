@@ -76,11 +76,11 @@
     height: 25px;
   }
   .bigLinks {
-    width: 120px;
+    width: 140px;
   }
 
   .bigLinks a {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     font-family: "Mulish", sans-serif;
     color: var(--color-text);
   }
