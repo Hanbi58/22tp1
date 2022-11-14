@@ -75,4 +75,13 @@
     width: 25px;
     height: 25px;
   }
+  .bigLinks {
+    width: 120px;
+  }
+
+  .bigLinks a {
+    font-size: 0.6rem;
+    font-family: "Mulish", sans-serif;
+    color: var(--color-text);
+  }
 }
