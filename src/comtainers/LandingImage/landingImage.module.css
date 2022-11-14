@@ -6,7 +6,6 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  overflow-x: hidden;
 }
 .sky {
   position: absolute;
@@ -225,6 +224,9 @@
     width: 40%;
     height: 40%;
   }
+  .titleFirst {
+    padding-top: 4rem;
+  }
 }
 @media (max-width: 1200px) {
   .titleFirst {
@@ -233,6 +235,9 @@
   .explore {
     font-size: 1rem;
     margin-top: 1rem;
+  }
+  .titleFirst {
+    padding-top: 5rem;
   }
 }
 

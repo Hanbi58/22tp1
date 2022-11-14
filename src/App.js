@@ -6,10 +6,10 @@ function App() {
     <>
       <NavBar />
       <LandingImage />
-      {/* <Story />
-      <List />
+      <Story />
+      {/* <List />
       <Bonus />
-      <Footer /> */}
+      <Footer />  */}
     </>
   );
 }

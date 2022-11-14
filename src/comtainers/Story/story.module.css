@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   margin: 10rem 0;
+  overflow-x: hidden;
 }
 
 .storyBg {
@@ -68,6 +69,7 @@
 }
 
 .georgeBg p {
+  font-size: 1rem;
   text-align: justify;
 }
 .georgeBg p:nth-of-type(2) {
@@ -102,4 +104,263 @@
 }
 .georgeName span {
   font-size: 4rem;
+}
+
+@media (max-width: 1366px) {
+  .storyContainer {
+    margin: 9rem 0;
+  }
+  .content {
+    height: 600px;
+  }
+  .textBox {
+    width: 600px;
+  }
+  .textBox h1 {
+    font-size: 2.2rem;
+  }
+
+  .textBox h2 {
+    font-size: 1.2rem;
+  }
+
+  .textBox p {
+    font-size: 1rem;
+    line-height: 1.1rem;
+  }
+  .imageBox {
+    width: 400px;
+  }
+  .georgeBg p {
+    font-size: 0.85rem;
+    text-align: justify;
+  }
+  .georgeBg p:nth-of-type(2) {
+    font-size: 1.1rem;
+  }
+  .georgeName {
+    font-size: 1.2rem;
+  }
+  .georgeName span {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  .storyContainer {
+    margin: 8rem 0;
+  }
+  .content {
+    height: 550px;
+  }
+  .textBox {
+    width: 500px;
+  }
+  .textBox h1 {
+    font-size: 1.9rem;
+  }
+
+  .textBox h2 {
+    font-size: 1.1rem;
+  }
+
+  .textBox p {
+    font-size: 1rem;
+    line-height: 0.9rem;
+  }
+  .imageBox {
+    width: 350px;
+  }
+  .georgeBg p {
+    font-size: 0.85rem;
+    text-align: justify;
+  }
+  .georgeBg p:nth-of-type(2) {
+    font-size: 1.1rem;
+  }
+  .georgeName {
+    font-size: 1.2rem;
+  }
+  .georgeName span {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .storyContainer {
+    margin: 7rem 0;
+  }
+  .content {
+    height: 550px;
+  }
+  .textBox {
+    width: 450px;
+  }
+  .textBox h1 {
+    font-size: 1.7rem;
+  }
+
+  .textBox h2 {
+    font-size: 1rem;
+  }
+
+  .textBox p {
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+  }
+  .imageBox {
+    width: 300px;
+  }
+  .georgeBg p {
+    font-size: 0.8rem;
+    text-align: justify;
+  }
+  .georgeBg p:nth-of-type(2) {
+    font-size: 1.1rem;
+  }
+  .georgeName {
+    font-size: 1.2rem;
+  }
+  .georgeName span {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 900px) {
+  .storyContainer {
+    margin: 6rem 0;
+  }
+  .content {
+    height: 500px;
+  }
+  .textBox {
+    width: 400px;
+  }
+  .textBox h1 {
+    font-size: 1.5rem;
+  }
+
+  .textBox h2 {
+    font-size: 1rem;
+  }
+
+  .textBox p {
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+  }
+  .imageBox {
+    width: 260px;
+  }
+  .georgeBg p {
+    font-size: 0.75rem;
+    text-align: justify;
+  }
+  .georgeBg p:nth-of-type(2) {
+    font-size: 1rem;
+  }
+  .georgeName {
+    top: 230px;
+    font-size: 1.2rem;
+  }
+  .georgeName span {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .storyContainer {
+    margin: 5rem 0;
+  }
+  .content {
+    height: 400px;
+  }
+  .textBox {
+    width: 400px;
+  }
+  .textBox h1 {
+    font-size: 1.5rem;
+  }
+
+  .textBox h2 {
+    font-size: 1rem;
+  }
+
+  .textBox p {
+    font-size: 0.7rem;
+    line-height: 0.7rem;
+  }
+  .imageBox {
+    width: 200px;
+  }
+  .georgeBg p {
+    font-size: 0.5rem;
+    text-align: center;
+  }
+  .georgeBg p:nth-of-type(2) {
+    font-size: 0.6rem;
+  }
+  .georgeName {
+    top: 210px;
+    font-size: 0.8rem;
+  }
+  .georgeName span {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 700px) {
+  .storyContainer {
+    height: auto;
+    overflow-x: hidden;
+  }
+  .content {
+    width: 85%;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    height: auto;
+    overflow-x: hidden;
+  }
+  .vrBox {
+    display: none;
+  }
+  .textBox {
+    position: relative;
+    width: 100%;
+  }
+  .textBox h1 {
+    font-size: 1.3rem;
+    align-self: auto;
+  }
+
+  .textBox h2 {
+    font-size: 1rem;
+  }
+
+  .textBox p {
+    position: relative;
+    font-size: 0.8rem;
+    line-height: 0.9rem;
+  }
+  .imageBox {
+    position: relative;
+    width: 100%;
+  }
+  .george {
+    position: relative;
+  }
+
+  .georgeBg p {
+    font-size: 0.5rem;
+    text-align: justify;
+  }
+  .georgeBg p:nth-of-type(2) {
+    font-size: 0.6rem;
+  }
+  .georgeName {
+    position: relative;
+    top: -100%;
+    text-align: right;
+    font-size: 0.8rem;
+  }
+  .georgeName span {
+    font-size: 2rem;
+  }
 }

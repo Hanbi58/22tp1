@@ -15,18 +15,18 @@ function Story() {
             that the second highest mountain in the world is K2, on the
             China-Pakistan border, but far fewer know that the third highest
             mountain in the world is called Kangchenjunga. Or how to spell that.
-            It’s not quite as simple as ‘K2’, that’s for sure. So, how many of
-            the highest mountains in the world do you really know? Freezing
-            weather, thin air, avalanches ... there’s a reason why climbers
-            spend years training to tackle the world’s highest peaks. These
-            massive mountains can be formed by volcanic explosions as well as
-            tectonic faults and collisions, some of which may have started
-            reshaping the Earth’s surface over 3.75 billion years ago.
+            It's not quite as simple as K2, that's for sure. So, how many of the
+            highest mountains in the world do you really know? Freezing weather,
+            thin air, avalanches ... there's a reason why climbers spend years
+            training to tackle the world's highest peaks. These massive
+            mountains can be formed by volcanic explosions as well as tectonic
+            faults and collisions, some of which may have started reshaping the
+            Earth's surface over 3.75 billion years ago.
             <br />
             <br />
-            &ensp;&ensp;&ensp;&ensp;Whether you’re planning your next adventure
+            &ensp;&ensp;&ensp;&ensp;Whether you're planning your next adventure
             or are simply looking for a bit of inspiration from the natural
-            world, nothing inspires one’s wanderlust quite like the world’s
+            world, nothing inspires one's wanderlust quite like the world's
             tallest mountains. These mountains are as beautiful as they are
             daunting for climbing enthusiasts. Each presents a unique set of
             charms and challenges for explorers. Feed your travel bug (and brush
@@ -43,7 +43,7 @@ function Story() {
               1920s. Once asked by a reporter why he wanted to climb Everest,
               the one famously replied:
             </p>
-            <p>"Because it’s there."</p>
+            <p>"Because it's there."</p>
           </div>
 
           <p className={classes.georgeName}>
