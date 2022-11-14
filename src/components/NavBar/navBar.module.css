@@ -7,6 +7,7 @@
   width: 100%;
   height: 2rem;
   justify-content: space-between;
+  /* overflow: visible; */
 }
 
 .truthlogo {
@@ -33,4 +34,45 @@
 .bigLinks a:hover {
   color: #ff004d;
   transform: translateY(-2px);
+}
+
+@media (max-width: 1366px) {
+  .truthlogo {
+    width: 40px;
+    height: 40px;
+  }
+  .bigLinks {
+    width: 200px;
+  }
+  .bigLinks a {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 1200px) {
+  .truthlogo {
+    width: 35px;
+    height: 35px;
+  }
+  .bigLinks {
+    width: 180px;
+  }
+  .bigLinks a {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .truthlogo {
+    width: 30px;
+    height: 30px;
+  }
+  .bigLinks {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  .truthlogo {
+    width: 25px;
+    height: 25px;
+  }
 }

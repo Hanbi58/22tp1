@@ -9,6 +9,7 @@ function NavBar() {
         <a href="#story">Story</a>
         <a href="#rank">Rank</a>
       </div>
+      {/* <div className={classes.mobileNav}></div> */}
     </div>
   );
 }
