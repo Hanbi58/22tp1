@@ -332,12 +332,13 @@
 
   .textBox h2 {
     font-size: 1rem;
+    margin-bottom: 1rem;
   }
 
   .textBox p {
     position: relative;
     font-size: 0.8rem;
-    line-height: 0.9rem;
+    line-height: 1rem;
   }
   .imageBox {
     position: relative;
@@ -348,11 +349,11 @@
   }
 
   .georgeBg p {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     text-align: justify;
   }
   .georgeBg p:nth-of-type(2) {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
   .georgeName {
     position: relative;
