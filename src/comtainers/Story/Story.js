@@ -1,11 +1,19 @@
 import classes from "./story.module.css";
 import { default as george } from "../../assets/story/george.jpg";
 import { default as storyBg } from "../../assets/story/storyBg.png";
+import { motion } from "framer-motion";
+
 function Story() {
   return (
-    <div className={classes.storyContainer} id="story">
+    <motion.div className={classes.storyContainer} id="story">
       <img src={storyBg} alt="" className={classes.storyBg} />
-      <div className={classes.content}>
+      <motion.div
+        className={classes.content}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.2 }}
+        viewport={{ once: true }}
+      >
         <div className={classes.textBox}>
           <h1>Geographical Destribution</h1>
           <h2>Get ready for Expedition</h2>
@@ -51,8 +59,8 @@ function Story() {
           </p>
           <img className={classes.george} src={george} alt="" />
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
 

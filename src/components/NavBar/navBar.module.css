@@ -66,9 +66,9 @@
     width: 30px;
     height: 30px;
   }
-  .bigLinks {
+  /* .bigLinks {
     display: none;
-  }
+  } */
 }
 @media (max-width: 450px) {
   .truthlogo {
