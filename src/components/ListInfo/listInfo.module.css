@@ -53,3 +53,9 @@
   bottom: 0;
   text-align: justify;
 }
+
+@media (max-width: 450px) {
+  * {
+    text-shadow: 3px 0px 6px var(--color-bg);
+  }
+}
