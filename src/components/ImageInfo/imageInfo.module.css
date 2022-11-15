@@ -3,7 +3,7 @@
   position: absolute;
   width: calc(950px * 0.8);
   height: auto;
-  top: 15rem;
+  top: 18rem;
   left: 5rem;
   z-index: 5;
 }
@@ -38,8 +38,12 @@
   font-size: 2rem;
   font-family: "Red Rose", cursive;
 }
+.textBox span {
+  font-size: 1rem;
+}
 
 .description {
+  font-size: 1rem;
   line-height: 130%;
   text-align: justify;
   color: #dde2e7;
@@ -80,10 +84,79 @@
 }
 
 @media (max-width: 1920px) {
+  .imageInfoContainer {
+    width: calc(850px * 0.8);
+    top: 15rem;
+    left: 5rem;
+  }
+  .textBox p {
+    font-size: 2rem;
+  }
+  .textBox span {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 130%;
+    text-indent: 3em;
+  }
 }
 @media (max-width: 1366px) {
+  .imageInfoContainer {
+    width: calc(820px * 0.8);
+    top: 12rem;
+    left: 1rem;
+  }
+  .textBox p {
+    font-size: 1.5rem;
+  }
+  .textBox span {
+    font-size: 0.9rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    line-height: 110%;
+    text-indent: 2em;
+  }
+  .parent {
+    width: 30px;
+    height: 30px;
+    padding: 1.5rem;
+  }
+  .barOne,
+  .barTwo {
+    width: 40px;
+    height: 5px;
+    border-radius: 3px;
+
+    top: 28px;
+    left: 10px;
+  }
 }
 @media (max-width: 768px) {
+  .imageInfoContainer {
+    width: calc(550px * 0.8);
+    top: 9rem;
+    left: 2rem;
+  }
+  .textBox p {
+    font-size: 1.2rem;
+  }
+  .textBox span {
+    font-size: 0.85rem;
+  }
+
+  .description {
+    font-size: 0.85rem;
+    line-height: 110%;
+    text-indent: 2em;
+  }
+  .parent[data-isopen="true"] {
+    width: 100%;
+    padding: 1.2rem 1.5rem 1rem 3rem;
+  }
 }
-@media (max-width: 450px) {
-}
+/* @media (max-width: 450px) {
+} */
