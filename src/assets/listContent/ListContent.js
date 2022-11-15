@@ -3,7 +3,7 @@ import twoB from "./02b7.jpg";
 import threeB from "./03b2.jpg";
 import fourB from "./04b7.jpg";
 import fivB from "./05b.jpg";
-import sixB from "./06b3.jpg";
+import sixB from "./06b4.jpg";
 import sevenB from "./07b4.jpg";
 import eightB from "./08b4.jpg";
 import nineB from "./09b8.jpg";
@@ -128,7 +128,7 @@ export const listContent = [
     region: "Nepal",
     imageUrl: eightB,
     shortDescription:
-      "One of the most dangerous of the eight-thousanders due to its high number of avalanches. Just over 52% of expeditions are successful and there's a death rate of 1 in 10 among climbers.",
+      "One of the most dangerous of the eight-thousanders due to its high number of avalanches. Just over 52% of expeditions are successful, death rate of 1 in 10 among climbers.",
     longDescription:
       "In 1974, an all-female team from Japan became the first women to successfully summit an 8,000-meter peak when they reached the top of Manaslu, which measures 26,781 feet.12 The 642-square-mile Manaslu Conservation Area was declared in 1998 to protect the habitats of the 33 mammal species, 110 bird species, 11 butterfly species, and three reptile species that live in the Manaslu region in the North Nepalese Himalayas.",
     smallImageUrl: eightS,

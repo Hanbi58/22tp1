@@ -33,7 +33,7 @@
   z-index: 5;
   width: 800px;
   height: 250px;
-  top: 4rem;
+  top: 3rem;
   left: 5rem;
 }
 
@@ -44,6 +44,12 @@
 }
 
 @media (max-width: 1920px) {
+  .infoSwiper {
+    scale: 0.9;
+
+    top: 1rem;
+    left: 3rem;
+  }
   .carouselContainer {
     width: 500px;
     right: 5rem;
@@ -54,6 +60,12 @@
   }
 }
 @media (max-width: 1366px) {
+  .infoSwiper {
+    scale: 0.7;
+
+    top: 0.5rem;
+    left: -3rem;
+  }
   .carouselContainer {
     width: 350px;
     right: 3rem;
@@ -61,6 +73,13 @@
   }
   .carouselSwiper {
     width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .infoSwiper {
+    scale: 0.6;
+    top: -2rem;
+    left: -6rem;
   }
 }
 /* @media (max-width: 768px) {
@@ -74,6 +93,11 @@
   }
 } */
 @media (max-width: 450px) {
+  .infoSwiper {
+    scale: 0.5;
+    top: -3rem;
+    left: -9rem;
+  }
   .carouselContainer {
     left: -40%;
     width: 180vw;
