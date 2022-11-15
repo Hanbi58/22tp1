@@ -94,14 +94,14 @@
 } */
 @media (max-width: 450px) {
   .infoSwiper {
-    scale: 0.5;
-    top: -3rem;
-    left: -9rem;
+    scale: 0.48;
+    top: -1.5rem;
+    left: -9.5rem;
   }
   .carouselContainer {
     left: -40%;
     width: 180vw;
-    height: 108vh;
+    height: 106vh;
     overflow: hidden;
     bottom: 0;
   }
