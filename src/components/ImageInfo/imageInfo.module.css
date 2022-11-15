@@ -5,6 +5,7 @@
   height: auto;
   top: 18rem;
   left: 5rem;
+  z-index: 5;
 }
 .parent {
   background-color: var(--color-bg-trans);

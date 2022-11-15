@@ -63,7 +63,7 @@
     width: 300px;
   }
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .carouselContainer {
     width: 250px;
     right: 0;
@@ -72,12 +72,12 @@
   .carouselSwiper {
     width: 200px;
   }
-}
+} */
 @media (max-width: 450px) {
   .carouselContainer {
     left: -40%;
     width: 180vw;
-    height: 110vh;
+    height: 106vh;
     overflow: hidden;
     bottom: 0;
   }

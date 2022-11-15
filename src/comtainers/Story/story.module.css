@@ -150,7 +150,7 @@
 
 @media (max-width: 1150px) {
   .storyContainer {
-    margin: 8rem 0;
+    margin: 0;
   }
   .content {
     height: 550px;
@@ -190,7 +190,7 @@
 
 @media (max-width: 1000px) {
   .storyContainer {
-    margin: 7rem 0;
+    margin: 0;
   }
   .content {
     height: 550px;
@@ -229,7 +229,7 @@
 }
 @media (max-width: 900px) {
   .storyContainer {
-    margin: 6rem 0;
+    margin: 0;
   }
   .content {
     height: 500px;
@@ -269,7 +269,7 @@
 }
 @media (max-width: 768px) {
   .storyContainer {
-    margin: 5rem 0;
+    margin: 0;
   }
   .content {
     height: 400px;
@@ -311,6 +311,7 @@
   .storyContainer {
     height: auto;
     overflow-x: hidden;
+    margin: 8rem 0;
   }
   .content {
     width: 85%;
