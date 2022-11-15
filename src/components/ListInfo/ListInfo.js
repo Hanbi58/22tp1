@@ -21,7 +21,7 @@ function ListInfo({ listContentItem }) {
           <div className={classes.height}>Height above see level</div>
         </div>
       </div>
-      <p>{listContentItem.shortDescription}</p>
+      <p className={classes.sDescription}>{listContentItem.shortDescription}</p>
     </div>
   );
 }

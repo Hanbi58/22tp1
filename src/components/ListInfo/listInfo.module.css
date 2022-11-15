@@ -58,4 +58,7 @@
   * {
     text-shadow: 3px 0px 6px var(--color-bg);
   }
+  .sDescription {
+    opacity: 0;
+  }
 }
