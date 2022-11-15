@@ -5,6 +5,7 @@
   clip-path: polygon(0 0, 50% 0, 100% 0, 100% 92%, 50% 100%, 0 92%);
   width: 100vw;
   height: 100vh;
+  min-height: 800px;
   overflow: hidden;
 }
 .sky {

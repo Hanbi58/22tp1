@@ -12,11 +12,11 @@ import tenB from "./10b5.jpg";
 import oneS from "./01s.jpg";
 import twoS from "./02s.jpg";
 import threeS from "./03s3.jpg";
-import fourS from "./04s.jpg";
+import fourS from "./04s2.jpg";
 import fivS from "./05s.jpg";
 import sixS from "./06s.jpg";
 import sevenS from "./07s2.jpg";
-import eightS from "./08s.jpg";
+import eightS from "./08s2.jpg";
 import nineS from "./09s.jpg";
 import tenS from "./10s2.jpg";
 

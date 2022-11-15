@@ -3,6 +3,7 @@
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
+  min-height: 600px;
 }
 
 .imageSwiper {
@@ -76,8 +77,9 @@
   .carouselContainer {
     left: -40%;
     width: 180vw;
-    height: 100vh;
+    height: 110vh;
     overflow: hidden;
+    bottom: 0;
   }
 
   .carouselSwiper {

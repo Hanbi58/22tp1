@@ -5,7 +5,7 @@ function Carousal({ listContentItem }) {
     <div
       className={classes.bg}
       style={{
-        background: ` no-repeat top center/cover url(${listContentItem.smallImageUrl})`,
+        background: ` no-repeat center top/cover url(${listContentItem.smallImageUrl})`,
       }}
     ></div>
   );
