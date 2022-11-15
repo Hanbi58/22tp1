@@ -32,3 +32,10 @@
   transform: translateY(10px);
   transition: transform 0.2s ease-out;
 }
+
+@media (max-width: 450px) {
+  .swiper-pagination-bullet,
+  .swiper-pagination-bullet-active {
+    display: none;
+  }
+}

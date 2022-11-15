@@ -7,8 +7,8 @@ function App() {
       <NavBar />
       <LandingImage />
       <Story />
-      {/* <List />
-      <Bonus />
+      <List />
+      {/*  <Bonus />
       <Footer />  */}
     </>
   );

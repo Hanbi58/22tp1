@@ -56,6 +56,7 @@ function List() {
         modules={[EffectFade, Thumbs]}
         effect={"fade"}
         simulateTouch={false}
+        allowTouchMove={false}
         loop={true}
         onSwiper={setThumbsSwiper}
         watchSlidesProgress={true}
@@ -66,6 +67,7 @@ function List() {
         className={classes.infoSwiper}
         modules={[Thumbs]}
         simulateTouch={false}
+        allowTouchMove={false}
         loop={true}
         thumbs={{ swiper: thumbsSwiper }}
         onSwiper={setInfoSwiper}

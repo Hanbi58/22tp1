@@ -37,15 +37,10 @@
 
 .rankNumber {
   position: relative;
-  /* font-family: "Goblin One", cursive; */
   font-family: "Red Rose", cursive;
-  /* font-weight: 700; */
   font-size: 4rem;
   line-height: 100%;
-  /* letter-spacing: -0.2rem; */
-  /* opacity: 0.8; */
   bottom: 0.3rem;
-  /* right: 0; */
 }
 
 .height {
@@ -53,7 +48,7 @@
 }
 
 .info p {
-  width: 80%;
+  width: 70%;
   position: absolute;
   bottom: 0;
   text-align: justify;
