@@ -1,8 +1,18 @@
 import classes from "./carousal.module.css";
 import { motion } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 
 function Carousal({ listContentItem, isOpen, openHandler }) {
+  const [scrollAvaliable, setScrollAvaliable] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.innerWidth <= 450) {
+        setScrollAvaliable(true);
+      } else {
+        setScrollAvaliable(false);
+      }
+    });
+  }, []);
   const scrollRef = useRef(null);
   const executeScroll = () =>
     scrollRef.current.scrollIntoView({
@@ -17,7 +27,7 @@ function Carousal({ listContentItem, isOpen, openHandler }) {
     : `${classes.tabContainer}`;
   return (
     <div
-      onClick={executeScroll}
+      onClick={scrollAvaliable ? executeScroll : undefined}
       ref={scrollRef}
       className={classes.bg}
       style={{
