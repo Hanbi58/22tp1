@@ -287,10 +287,13 @@
     width: 100%;
     gap: 1.5rem;
   }
+
   .leftTile p:nth-of-type(1) {
+    text-align: end;
     font-size: 1.6rem;
   }
   .leftTile p:nth-of-type(2) {
+    text-align: end;
     font-size: 0.83rem;
   }
   .leftTile p:nth-of-type(3) {
@@ -313,7 +316,8 @@
     order: 2;
   }
   .rightText h2 {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
+    white-space: nowrap;
     margin: 3rem 0 1rem;
   }
   .rightText p {
