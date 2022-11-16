@@ -1,11 +1,18 @@
 import classes from "./bonus.module.css";
 import { Kawagarbo, Team, BonusBg } from "../../assets/bonus";
+import { motion } from "framer-motion";
 function Bonus() {
   return (
     <div className={classes.bonusContainer}>
       <img src={BonusBg} alt="" className={classes.bonusBg} />
       <div className={classes.content}>
-        <div className={classes.left}>
+        <motion.div
+          className={classes.left}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1.2 }}
+          viewport={{ once: true }}
+        >
           <div className={classes.leftTile}>
             <p>Bonus from Designer</p>
             <p>A virgin peak that refuses any footstamp.</p>
@@ -39,9 +46,15 @@ function Bonus() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
         <div className={classes.vrBox}></div>
-        <div className={classes.right}>
+        <motion.div
+          className={classes.right}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1.2 }}
+          viewport={{ once: true }}
+        >
           <div
             className={classes.rightImg}
             style={{
@@ -79,7 +92,7 @@ function Bonus() {
               of the mountain for seven years.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
