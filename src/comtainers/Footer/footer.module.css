@@ -40,3 +40,28 @@
   font-size: 0.78rem;
   color: var(--color-text);
 }
+
+@media (max-width: 768px) {
+  .footer {
+    width: 90%;
+  }
+  .quote {
+    font-size: 1rem;
+  }
+  .logoContainer {
+    width: 250px;
+    height: 100px;
+    justify-content: space-between;
+  }
+  .truthlogo {
+    width: 35px;
+    height: 35px;
+  }
+  .lastWords p:nth-of-type(1) {
+    font-size: 0.7rem;
+  }
+  .lastWords p:nth-of-type(2) {
+    font-size: 0.5rem;
+    color: var(--color-text);
+  }
+}
