@@ -6,10 +6,12 @@
   color: white;
   width: 100vw;
   height: 100vh;
+  min-height: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 15rem 0 10rem;
+  overflow: hidden;
 }
 .bonusBg {
   position: absolute;
@@ -17,6 +19,7 @@
   width: 100%;
   opacity: 0.03;
   top: 1rem;
+  overflow: hidden;
 }
 .content {
   margin: auto;
@@ -27,24 +30,19 @@
   height: 1000px;
 }
 .leftTile p:nth-of-type(1) {
-  /* font-family: "Chonburi", cursive; */
   font-size: 2.75rem;
   font-weight: 500;
 }
 .leftTile p:nth-of-type(2) {
-  /* font-family: "Red Rose", cursive; */
   font-size: 1.1rem;
   text-align: justify;
-  /* margin: 1rem 0 2rem; */
   line-height: 130%;
   color: var(--color-text);
 }
 .leftTile p:nth-of-type(3) {
-  /* font-family: "Red Rose", cursive; */
   font-size: 0.9rem;
   text-align: justify;
   margin-top: 1rem;
-  /* line-height: 130%; */
   text-indent: 2rem;
   color: var(--color-text);
 }
@@ -98,7 +96,6 @@
   background-color: white;
 }
 
-/* Text */
 .textContainer {
   position: absolute;
   bottom: 10rem;
@@ -116,21 +113,15 @@
   font-size: 1rem;
 }
 .text span {
-  /* margin-left: -0.4rem; */
   font-size: 0.8rem;
 }
 
 .rankNumber {
   position: relative;
-  /* font-family: "Goblin One", cursive; */
   font-family: "Red Rose", cursive;
-  /* font-weight: 700; */
   font-size: 4rem;
   line-height: 100%;
-  /* letter-spacing: -0.2rem; */
-  /* opacity: 0.8; */
   bottom: 0.3rem;
-  /* right: 0; */
 }
 
 .height {
@@ -143,4 +134,137 @@
   position: absolute;
   bottom: 0;
   text-align: justify;
+}
+
+@media (max-width: 1500px) {
+  .content {
+    width: 85%;
+  }
+  .leftTile p:nth-of-type(1) {
+    font-size: 2.5rem;
+  }
+  .leftTile p:nth-of-type(2) {
+    font-size: 1rem;
+  }
+  .leftTile p:nth-of-type(3) {
+    font-size: 0.85rem;
+    margin-top: 1rem;
+  }
+  .rightTile,
+  .rightText {
+    font-size: 0.8rem;
+    text-indent: 1.5rem;
+  }
+  .rightText h2 {
+    margin: 1rem 0 0.5rem;
+  }
+  .rightText p {
+    font-size: 0.85rem;
+  }
+}
+@media (max-width: 1366px) {
+  .leftTile p:nth-of-type(1) {
+    font-size: 2rem;
+  }
+  .leftTile p:nth-of-type(2) {
+    font-size: 0.9rem;
+  }
+  .leftTile p:nth-of-type(3) {
+    font-size: 0.8rem;
+    margin-top: 0.9rem;
+  }
+  .rightTile,
+  .rightText {
+    font-size: 0.75rem;
+    text-indent: 1.5rem;
+  }
+  .rightText h2 {
+    margin: 0.9rem 0 0.5rem;
+  }
+  .rightText p {
+    font-size: 0.85rem;
+  }
+  .textContainer {
+    bottom: 11rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .left {
+    width: 52%;
+  }
+  .right {
+    width: 38%;
+  }
+  .leftTile p:nth-of-type(1) {
+    font-size: 2rem;
+  }
+  .leftTile p:nth-of-type(2) {
+    font-size: 0.9rem;
+  }
+  .leftTile p:nth-of-type(3) {
+    font-size: 0.8rem;
+    margin-top: 0.9rem;
+  }
+  .rightTile,
+  .rightText {
+    font-size: 0.75rem;
+  }
+  .rightText h2 {
+    font-size: 1rem;
+    margin: 0.5rem 0 0.3rem;
+  }
+  .rightText p {
+    font-size: 0.75rem;
+  }
+  .textContainer {
+    bottom: 12rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .left {
+    width: 52%;
+  }
+  .right {
+    width: 42%;
+  }
+  .bonusContainer {
+    min-height: 800px;
+  }
+  .content {
+    height: 750px;
+  }
+  .leftTile p:nth-of-type(1) {
+    font-size: 1.6rem;
+  }
+  .leftTile p:nth-of-type(2) {
+    font-size: 0.8rem;
+  }
+  .leftTile p:nth-of-type(3) {
+    font-size: 0.65rem;
+    margin-top: 0.85rem;
+  }
+  .rightTile,
+  .rightText {
+    line-height: 100%;
+    font-size: 0.65rem;
+    text-indent: 1rem;
+  }
+  .rightText h2 {
+    font-size: 0.8rem;
+    margin: 0.5rem 0 0.3rem;
+  }
+  .rightText p {
+    line-height: 100%;
+    font-size: 0.65rem;
+  }
+  .textContainer {
+    bottom: 12rem;
+  }
+}
+
+@media (max-width: 768px) {
+}
+@media (max-width: 700px) {
 }
