@@ -1,7 +1,10 @@
 import classes from "./carousal.module.css";
 import { motion } from "framer-motion";
 
-function Carousal({ listContentItem }) {
+function Carousal({ listContentItem, isOpen, openHandler }) {
+  const textTabClass = isOpen
+    ? `${classes.textContainer} ${classes.textContainerOpen}`
+    : `${classes.textContainer}`;
   return (
     <div
       className={classes.bg}
@@ -9,7 +12,7 @@ function Carousal({ listContentItem }) {
         background: ` no-repeat center top/cover url(${listContentItem.smallImageUrl})`,
       }}
     >
-      <div className={classes.textContainer}>
+      <div className={textTabClass}>
         <div className={classes.textBox}>
           <p>{listContentItem.range}</p>
           <span>{listContentItem.region}</span>
@@ -18,13 +21,14 @@ function Carousal({ listContentItem }) {
           {listContentItem.longDescription}
         </div>
       </div>
+
       <motion.div
         className={classes.tabContainer}
         drag="y"
         dragSnapToOrigin={true}
         dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
         dragElastic={0.1}
-        onDragEnd={() => console.log("hahaha")}
+        onDragEnd={openHandler}
       >
         <div className={classes.dragDot}>
           <div className={classes.dragDotBar}></div>

@@ -16,7 +16,8 @@
 }
 
 @media (min-width: 451px) {
-  .tabContainer {
+  .tabContainer,
+  .textContainer {
     display: none;
   }
 }
@@ -45,11 +46,22 @@
 .textContainer {
   position: absolute;
   background-color: var(--color-bg-trans);
+  opacity: 0;
   height: auto;
   width: 350px;
   margin: auto;
   bottom: 8rem;
+  border-radius: 5px;
   padding: 1rem 1rem 3rem;
+  transform: translateX(-100vw);
+  transition: all 0.6s ease-out;
+}
+
+.textContainerOpen {
+  opacity: 1;
+  bottom: 8rem;
+  transform: translateX(0);
+  margin: auto;
 }
 .textBox {
   display: flex;

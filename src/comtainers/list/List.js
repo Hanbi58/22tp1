@@ -37,7 +37,11 @@ function List() {
   ));
   const carousalSwipers = listContent.map((listContentItem) => (
     <SwiperSlide key={listContentItem.id}>
-      <Carousal listContentItem={listContentItem} />
+      <Carousal
+        listContentItem={listContentItem}
+        isOpen={isOpen}
+        openHandler={openHandler}
+      />
     </SwiperSlide>
   ));
   const pagination = {
@@ -100,6 +104,7 @@ function List() {
             300: {},
           }}
           thumbs={{ swiper: infoSwiper }}
+          // onSlideChange={closeHandler}
           onSlideChange={closeHandler}
         >
           {carousalSwipers}
