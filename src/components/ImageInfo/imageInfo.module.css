@@ -105,7 +105,7 @@
 @media (max-width: 1366px) {
   .imageInfoContainer {
     width: calc(820px * 0.8);
-    top: 12rem;
+    top: 11rem;
     left: 1rem;
   }
   .textBox p {
