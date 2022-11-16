@@ -10,6 +10,7 @@
   --color-footer: #031b34;
   --color-blog: #042c54b0;
   --color-text: #c9d5e2;
+  --color-scrollbar: #273a57;
   --color-subtext: #ff8a71;
 }
 
@@ -29,4 +30,18 @@ body {
   padding: 0;
   overflow-x: hidden;
   /* min-height: 3000px; */
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-scrollbar);
+  border-radius: 4px;
+  border: 2px solid var(--color-bg);
 }

@@ -8,8 +8,8 @@ function App() {
       <LandingImage />
       <Story />
       <List />
-      {/*  <Bonus />
-      <Footer />  */}
+      <Bonus />
+      <Footer />
     </>
   );
 }
