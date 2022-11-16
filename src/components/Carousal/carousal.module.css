@@ -29,3 +29,16 @@
   background-color: var(--color-circleBox-trans-mid);
   margin: auto;
 }
+.dragDot {
+  position: relative;
+  width: 70px;
+
+  margin: auto;
+  top: 46%;
+}
+.dragDotBar {
+  height: 3px;
+  width: 100%;
+  border-radius: 3px;
+  background-color: var(--color-text);
+}
