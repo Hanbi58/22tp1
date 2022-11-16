@@ -1,7 +1,14 @@
 import classes from "./carousal.module.css";
 import { motion } from "framer-motion";
+import { useRef } from "react";
 
 function Carousal({ listContentItem, isOpen, openHandler }) {
+  const scrollRef = useRef(null);
+  const executeScroll = () =>
+    scrollRef.current.scrollIntoView({
+      behavior: "smooth",
+      top: scrollRef.current.offsetTop,
+    });
   const textClass = isOpen
     ? `${classes.textContainer} ${classes.textContainerOpen}`
     : `${classes.textContainer}`;
@@ -10,6 +17,8 @@ function Carousal({ listContentItem, isOpen, openHandler }) {
     : `${classes.tabContainer}`;
   return (
     <div
+      onClick={executeScroll}
+      ref={scrollRef}
       className={classes.bg}
       style={{
         background: ` no-repeat center top/cover url(${listContentItem.smallImageUrl})`,
