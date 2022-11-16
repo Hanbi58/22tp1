@@ -290,11 +290,11 @@
 
   .leftTile p:nth-of-type(1) {
     text-align: end;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
   .leftTile p:nth-of-type(2) {
     text-align: end;
-    font-size: 0.86rem;
+    font-size: 0.8rem;
   }
   .leftTile p:nth-of-type(3) {
     font-size: 0.7rem;
