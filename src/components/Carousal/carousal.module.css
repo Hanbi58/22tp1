@@ -22,9 +22,10 @@
 }
 .tabContainer {
   position: absolute;
-  height: 60vh;
-  width: 80vw;
-  background-color: var(--color-bg-trans);
+  height: 30px;
+  width: 150px;
+  bottom: 5rem;
+  border-radius: 30px;
+  background-color: var(--color-circleBox-trans-mid);
   margin: auto;
-  clip-path: polygon(30% 77%, 70% 77%, 100% 100%, 0% 100%);
 }

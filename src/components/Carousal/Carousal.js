@@ -8,7 +8,9 @@ function Carousal({ listContentItem }) {
         background: ` no-repeat center top/cover url(${listContentItem.smallImageUrl})`,
       }}
     >
-      <div className={classes.tabContainer}></div>
+      <div className={classes.tabContainer}>
+        <div className={classes.arrows}></div>
+      </div>
     </div>
   );
 }
