@@ -17,93 +17,97 @@
 
 @media (min-width: 451px) {
   .tabContainer,
-  .textContainer {
+  .tabContainerOpen,
+  .textContainer,
+  .textContainerOpen {
     display: none;
   }
 }
-.tabContainer {
-  position: absolute;
-  height: 30px;
-  width: 150px;
-  bottom: 5rem;
-  border-radius: 30px;
-  background-color: var(--color-circleBox-trans-mid);
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.6s ease-out;
-}
+@media (max-width: 450px) {
+  .tabContainer {
+    position: absolute;
+    height: 30px;
+    width: 150px;
+    bottom: 5rem;
+    border-radius: 30px;
+    background-color: var(--color-circleBox-trans-mid);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.6s ease-out;
+  }
 
-.dragDot {
-  position: relative;
-  width: 70px;
-  margin: auto;
-  /* top: 46%; */
-  transition: all 0.6s ease-out;
-}
-.dragDotBar {
-  height: 3px;
-  width: 100%;
-  border-radius: 3px;
-  background-color: var(--color-text);
-  transition: all 0.6s ease-out;
-}
-.tabContainerOpen {
-  width: 80px;
-  height: 30px;
-}
-.tabContainerOpen .dragDotBar {
-  /* height: 12px;
+  .dragDot {
+    position: relative;
+    width: 70px;
+    margin: auto;
+    /* top: 46%; */
+    transition: all 0.6s ease-out;
+  }
+  .dragDotBar {
+    height: 3px;
+    width: 100%;
+    border-radius: 3px;
+    background-color: var(--color-text);
+    transition: all 0.6s ease-out;
+  }
+  .tabContainerOpen {
+    width: 80px;
+    height: 30px;
+  }
+  .tabContainerOpen .dragDotBar {
+    /* height: 12px;
   width: 12px;
   border-radius: 12px; */
-  transform: scaleX(0.2) scaleY(4.5);
-  border-radius: 50%;
-  margin: auto;
-}
-.textContainer {
-  position: absolute;
-  background-color: var(--color-bg-trans);
-  opacity: 0;
-  height: auto;
-  width: 350px;
-  margin: auto;
-  bottom: 8rem;
-  border-radius: 5px;
-  padding: 1rem 1rem 3rem;
-  transform: translateX(-100vw);
-  transition: all 0.6s ease-out;
-}
+    transform: scaleX(0.2) scaleY(4.5);
+    border-radius: 50%;
+    margin: auto;
+  }
+  .textContainer {
+    position: absolute;
+    background-color: var(--color-bg-trans);
+    opacity: 0;
+    height: auto;
+    width: 350px;
+    margin: auto;
+    bottom: 8rem;
+    border-radius: 5px;
+    padding: 1rem 1rem 3rem;
+    transform: translateX(-100vw);
+    transition: all 0.6s ease-out;
+  }
 
-.textContainerOpen {
-  opacity: 1;
-  bottom: 8rem;
-  transform: translateX(0);
-  margin: auto;
-}
-.textBox {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
+  .textContainerOpen {
+    opacity: 1;
+    bottom: 8rem;
+    transform: translateX(0);
+    margin: auto;
+  }
+  .textBox {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
 
-.textBox p {
-  font-size: 1.5rem;
-  font-family: "Red Rose", cursive;
-  color: #dde2e7;
-}
-.textBox span {
-  font-size: 0.8rem;
-  color: #dde2e7;
-}
+  .textBox p {
+    font-size: 1.5rem;
+    font-family: "Red Rose", cursive;
+    color: #dde2e7;
+  }
+  .textBox span {
+    font-size: 0.8rem;
+    color: #dde2e7;
+  }
 
-.description {
-  font-size: 0.76rem;
-  line-height: 120%;
-  text-align: justify;
-  color: #dde2e7;
-  text-indent: 3.5em;
+  .description {
+    font-size: 0.76rem;
+    line-height: 120%;
+    text-align: justify;
+    color: #dde2e7;
+    text-indent: 3.5em;
+  }
 }

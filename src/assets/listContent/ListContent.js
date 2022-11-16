@@ -9,7 +9,7 @@ import eightB from "./08b4.jpg";
 import nineB from "./09b8.jpg";
 import tenB from "./10b5.jpg";
 
-import oneS from "./01s3.jpg";
+import oneS from "./01s4.jpg";
 import twoS from "./02s.jpg";
 import threeS from "./03s3.jpg";
 import fourS from "./04s2.jpg";
